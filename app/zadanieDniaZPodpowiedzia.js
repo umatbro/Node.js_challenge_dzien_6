@@ -1,7 +1,5 @@
 //Twój kod
 
-
-
 // Funkcje pomocnicze
 
 /**
@@ -24,3 +22,8 @@ function addComment(commentsCookieValue, newComment) {
 function readComments(commentsCookieValue) {
     return commentsCookieValue ? JSON.parse(commentsCookieValue) : [];
 }
+
+module.exports = {
+  readComments: readComments,
+  addComment: addComment
+};
